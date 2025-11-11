@@ -1,10 +1,15 @@
-import { Text, View } from "react-native";
-import TextField from "../components/textField"
-export default function Index() {
+// App.tsx
+import React from 'react';
+import { SafeAreaView } from 'react-native';
+import LoginScreen from '@/components/textField';
+import "@/global.css";
+
+export default function App() {
   return (
-    
-     <View className="flex-1">
-      <TextField></TextField>
-     </View>
+
+      <SafeAreaView className="flex-1 bg-gray-100">
+        <LoginScreen />
+      </SafeAreaView>
+
   );
 }
